@@ -39,20 +39,7 @@ html, body {width:100%;height:100%;margin:0;padding:0;}
     <button onclick="showMarkers()">마커 보이기</button>
 </p>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<!-- <script src="poly_emd_4326_v3.geojson" type="text/javascript"></script>/ -->
-<!-- <script src="안동_인구집적지.geojson" type="text/javascript"></script>
-<script src="안동_고용집적지.geojson" type="text/javascript"></script> -->
-<!-- <script src="안동_거점결과.geojson" type="text/javascript"></script>
-<script src="안동_거점결과_grid.geojson" type="text/javascript"></script>
-<script src="sgg_안동시.geojson" type="text/javascript"></script>
-<script src="emd_안동시.geojson" type="text/javascript"></script>
-
-<script src="POI_관공서.geojson" type="text/javascript"></script>
-<script src="POI_초등학교.geojson" type="text/javascript"></script>
-<script src="POI_보건기관.geojson" type="text/javascript"></script>
-<script src="POI_경찰서.geojson" type="text/javascript"></script>
-<script src="산업단지.geojson" type="text/javascript"></script> -->
-<script src="SIG_250_SGIS_Census_WGS84.geojson" type="text/javascript"></script>
+<!-- <script src="SIG_250_SGIS_Census_WGS84.geojson" type="text/javascript"></script> -->
 <script src="유출_025미만.geojson" type="text/javascript"></script>
 <script src="유출_025_05.geojson" type="text/javascript"></script>
 <script src="유출_05_1.geojson" type="text/javascript"></script>
@@ -76,7 +63,7 @@ var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니
 var polygons = [];
 
 Initialization(map);
-DrawPolygon(); //sgg
+// DrawPolygon(); //sgg
 DrawPolygon_out_025();
 DrawPolygon_out_025_05();
 DrawPolygon_out_05_1();
