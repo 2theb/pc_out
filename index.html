@@ -39,7 +39,6 @@ html, body {width:100%;height:100%;margin:0;padding:0;}
     <button onclick="showMarkers()">마커 보이기</button>
 </p>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<!-- <script src="SIG_250_SGIS_Census_WGS84.geojson" type="text/javascript"></script> -->
 <script src="유출_025미만.geojson" type="text/javascript"></script>
 <script src="유출_025_05.geojson" type="text/javascript"></script>
 <script src="유출_05_1.geojson" type="text/javascript"></script>
@@ -63,17 +62,11 @@ var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니
 var polygons = [];
 
 Initialization(map);
-// DrawPolygon(); //sgg
 DrawPolygon_out_025();
 DrawPolygon_out_025_05();
 DrawPolygon_out_05_1();
 DrawPolygon_out_1_2();
 DrawPolygon_out_2();
-// DrawPolygon2();
-// DrawPolygon1(); 
-// DrawPolygon_pop();
-// DrawPoint();
-
 
 // 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
 function setMapType(maptype) { 
