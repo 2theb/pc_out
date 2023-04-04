@@ -4,22 +4,22 @@ function Initialization(_map){
     map = _map;
 }
 
-function DrawPolygon() {
-let testData = JSON.parse(JSON.stringify(sgg));   
-var data = testData.features;  
-$.each(data, function(index, val) {
-    coordinates = val.geometry.coordinates;
+// function DrawPolygon() {
+// let testData = JSON.parse(JSON.stringify(sgg));   
+// var data = testData.features;  
+// $.each(data, function(index, val) {
+//     coordinates = val.geometry.coordinates;
 
-    if(val.geometry.type == "MultiPolygon") {
-        displayArea(coordinates, name, true);
+//     if(val.geometry.type == "MultiPolygon") {
+//         displayArea(coordinates, name, true);
    
-    }
-    else {
-        displayArea(coordinates, name, false);   
-        // console.log(coordinates.length)     
-    }
-    })
-}
+//     }
+//     else {
+//         displayArea(coordinates, name, false);   
+//         // console.log(coordinates.length)     
+//     }
+//     })
+// }
 
 function DrawPolygon_out_025() {
     let testData = JSON.parse(JSON.stringify(out_025));   
